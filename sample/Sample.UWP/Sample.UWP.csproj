@@ -98,6 +98,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Renderers\CheckboxRenderer.cs" />
     <Compile Include="Renderers\ColorExtensions.cs" />
+    <Compile Include="Renderers\ModifiablePlaceHolderEntryRenderer.cs" />
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">

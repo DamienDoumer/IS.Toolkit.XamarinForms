@@ -9,6 +9,7 @@
 
         <Grid.RowDefinitions>
             <RowDefinition />
+            <RowDefinition />
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
         <Grid Padding="10">            
@@ -150,17 +151,23 @@
                 </controls:FloatingActionMenu.Items>
             </controls:FloatingActionMenu>
         </Grid>
-
-        <Grid Grid.Row="1">
+        
+        <Grid Grid.Row="2">
             <Grid.RowDefinitions>
+                <RowDefinition />
                 <RowDefinition />
                 <RowDefinition />
             </Grid.RowDefinitions>
 
-            <controls:SnackBar x:Name="SnackB" HeightRequest="50" FontSize="12" 
-                               BackgroundColor="#323232" TextColor="White" ButtonTextColor="Orange" CloseButtonText="ANNULER"  Grid.Row="1"
+
+            <controls:ModifiablePlaceHolderEntry Grid.Row="1"
+                                             HorizontalOptions="FillAndExpand"
+                                             Placeholder="Heyyyyyyyy"/>
+
+            <controls:SnackBar x:Name="SnackB" HeightRequest="50" FontSize="12"  Grid.Row="1"
+                               BackgroundColor="#323232" TextColor="White" ButtonTextColor="Orange" CloseButtonText="ANNULER"
                                />
-            <Button x:Name="Obutton" Text="OpenButton" Clicked="Button_Clicked"/>
+            <Button x:Name="Obutton" Grid.Row="2" Text="OpenButton" Clicked="Button_Clicked"/>
 
         </Grid>
     </Grid>
